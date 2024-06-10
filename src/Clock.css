@@ -1,0 +1,40 @@
+
+main{
+  border: 1px solid black;
+  border-radius: 50%;
+  
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+main > *{
+  grid-row: 1;
+  grid-column:1;
+}
+#digital{
+  transform: translate3d(0,20px,0);
+  z-index: 2;
+}
+#hour{
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(to right, transparent 50%, black 50%);
+}
+#minute{
+  width: 95%;
+  height: 2px;
+  background: linear-gradient(to right, transparent 50%, black 50%, transparent);
+}
+#second{
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent 50%, black 50%, transparent);
+}
+
+#dot{
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 50%;
+}
