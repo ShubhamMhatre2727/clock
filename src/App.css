@@ -5,6 +5,31 @@
   text-align: center;
 }
 
-main h1{
-  transition: transform 1s linear;
+main{
+  display: grid;
+  place-items: center;
+}
+
+main > *{
+  grid-row: 1;
+  grid-column:1;
+}
+
+
+#hour{
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, transparent 50%, black 50%);
+}
+#minute{
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(to right, transparent 50%, black 50%, transparent);
+
+}
+#second{
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(to right, transparent 50%, black 50%, transparent);
+
 }
