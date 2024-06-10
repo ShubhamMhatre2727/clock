@@ -8,8 +8,8 @@ function Clock({width, height}) {
       //Implementing the setInterval method
       const interval = setInterval(() => {
           const now = new Date();
-          //setCount([now.getHours(), now.getMinutes(), now.getSeconds()]);
-          setCount([3,30,0])
+          setCount([now.getHours(), now.getMinutes(), now.getSeconds()]);
+          // setCount([3,30,0])
       }, 1000);
 
 
@@ -20,7 +20,7 @@ function Clock({width, height}) {
   }, [count]);
 
   return (
-    <main style={{width: `${width}`, height: `${height}`}}>
+    <main style={{width: `${width}px`, height: `${height}px`}}>
     <div id="digital">{count[0]}:{count[1]}:{count[2]}</div>
         <div id="hour" style={{transform: `rotate(${count[0]*30 + count[1]*0.2 -90}deg)`}}></div>
         <div id="minute" style={{transform: `rotate(${count[1]*6 - 90}deg)`}}></div>

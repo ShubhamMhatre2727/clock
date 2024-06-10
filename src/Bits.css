@@ -1,0 +1,23 @@
+.Bits {
+    border: 1px solid black;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.Bits > *{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.Bits .secondBits {
+    width: inherit;
+    height: 1px;
+    background: linear-gradient(90deg ,black, transparent 2%, transparent 98%, black);
+}
+
+.Bits .hourBits {
+    width: inherit;
+    height: 2px;
+    background: linear-gradient(90deg ,black, transparent 7%, transparent 93%, black);
+}
