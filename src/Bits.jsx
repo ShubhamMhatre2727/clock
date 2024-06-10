@@ -12,7 +12,7 @@ export default function Bits({width, height}){
   function HourBits(){
     let list = [];
     for(let i=0; i<6; i++){
-      list.push(<p className='hourBits' style={{transform:`rotate3d(0,0,1,${i*30}deg`}}></p>);
+      list.push(<p className='hourBits' style={{transform:`rotate3d(0,0,1,${i*30}deg`}}><span style={{transform:`rotate3d(0,0,1,-${i*30}deg)`}}>{((i + 9)%12 == 0)?12:(i+9)%12}</span><span style={{transform:`rotate3d(0,0,1,-${i*30}deg)`}}>{((i + 9)%12 == 0)?6:(i+3)%12}</span></p>);
     }
    return list;
   }  

@@ -14,7 +14,8 @@ main > *{
 }
 #digital{
   transform: translate3d(0,20px,0);
-  z-index: 2;
+  font-size: x-small;
+  font-weight: bold;
 }
 #hour{
   width: 50%;
@@ -33,8 +34,8 @@ main > *{
 }
 
 #dot{
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   background: black;
   border-radius: 50%;
 }

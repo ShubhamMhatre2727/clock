@@ -19,5 +19,13 @@
 .Bits .hourBits {
     width: inherit;
     height: 2px;
-    background: linear-gradient(90deg ,black, transparent 7%, transparent 93%, black);
+    background: linear-gradient(90deg ,black, transparent 5%, transparent 95%, black);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Bits .hourBits span {
+    margin: 0 10px;
 }
